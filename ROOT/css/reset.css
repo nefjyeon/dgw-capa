@@ -1,0 +1,62 @@
+@charset "utf-8"; 
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); */
+@import url("/resources/font/NotoKR-Bold/stylesheet.css");
+@import url("/resources/font/NotoKR-DemiLight/stylesheet.css"); 
+@import url("/resources/font/NotoKR-Light/stylesheet.css");
+@import url("/resources/font/NotoKR-Medium/stylesheet.css");
+@import url("/resources/font/NotoKR-Regular/stylesheet.css");
+@import url("/resources/font/NotoKR-Thin/stylesheet.css");
+
+/******************** Reset Start ********************/
+html, body {
+  /* font-family:'NotoKr';
+  font-weight:400; */
+  /* font-family: 'NotoKR-Regular',sans-serif;  */
+  font-weight:400;
+  font-family:"Noto Sans KR", sans-serif;;
+  letter-spacing:-.5px;
+}
+html,body,div,
+h1,h2,h3,h4,h5,h6,
+ul,ol,li,dl,dt,dd,
+p,img,a,span,strong,em,
+table,caption,colgroup,col,thead,tbody,tfoot,th,tr,td,
+form,fieldset,legend,label,input,select,option,optgroup,object,iframe,
+address,cite,button,small,s,b {margin:0; padding:0}
+address,caption,cite,code,dfn,em,var,h1,h2,h3,h4 {font-style:normal;font-weight:400}
+i {font-style:normal;}
+
+/* 폰트, color는 디자인가이드에 맞게사용 */
+body,th,td,input,select,textarea,button,h1,h2,h3,h4,li,a,dt,dd,li,div {word-spacing:-0.02em;word-break:keep-all;word-wrap: break-word;}
+/* body,div,input,textarea,button,select {
+  font-family:'맑은 고딕', 'Malgun Gothic', 'NotoKr', Dotum, '굴림', arial, sans-serif;
+  font-weight:500;
+} */
+button {/*letter-spacing:-0.02em;*/color:#3d4349;}
+body,input,textarea,button,select {font-size:14px;color:#3d4349;line-height:1.6;}
+button {overflow:visible; cursor:pointer; border:none; background-color:transparent; appearance:none; -webkit-appearance:none}
+button::-moz-focus-inner {border:0; padding:0}
+address,cite {font-style:normal}
+img,fieldset {border:0 none}
+ul,ol,li {list-style-type:none}
+label, button, [type='button'], [type='submit'] {cursor:pointer}
+table {
+  /* table-layout:fixed;  */
+  border-collapse:collapse; border-spacing:0}
+strong {font-weight: 600;}
+/* a css */
+a {cursor: pointer}
+a, a:link, a:visited {text-decoration:none; color:inherit}
+a:hover,a:focus {text-decoration:none}
+
+/******************** Reset END ********************/
+
+
+
+
+/* body {
+  font-family:'맑은 고딕';
+  font-family:'NotoKr';
+  font-family:"NotoKR-Regular", sans-serif;
+  font-family:'맑은 고딕', 'Malgun Gothic', 'NotoKr', Dotum, '굴림', arial, sans-serif;
+} */

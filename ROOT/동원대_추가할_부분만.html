@@ -1,0 +1,82 @@
+
+<!-- 상단 고정 버튼 팝업 기능 (분류: common) -->
+<script>
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+		
+	});
+
+</script>
+<!-- // 상단 고정 버튼 팝업 기능 (분류: common) -->
+
+
+
+<div class="popBg" style="display:block;"></div>
+		
+
+<!-- 팝업소스 -->
+<div class="layPop" id="loginLayer"  style="display:block;">
+	<img class="img_bell" src="images/common/img_bell.png" alt="">
+		<div class="tit">다시 로그인 하기</div>
+		<div class="box listPop">
+			<p>
+				로그인이 종료되어 <br><em>다시 로그인</em>이 필요합니다.<br/>
+				<strong>작성하신 내용은 그대로 유지됩니다.</strong><br/>
+				<em>로그인 후 이어서 계속 하실 수 있습니다.</em>		
+			</p>
+			<div class="loginCon">
+				<form name="loginLayerFrm" method="post" action="/member/login_proc.do" onsubmit="return ajaxLoginSubmit();">
+
+					<div class="wrap-input input-effect">
+						<input class="effect-21" type="text" id="refer" name="refer" value="${param.refer}" placeholder="">
+						<label>교직원번호</label>
+						<span class="focus-border">
+							<i></i>
+							</span>
+					</div>
+					<div class="wrap-input input-effect">
+						<input class="effect-21" type="password" id="manager" name="manager" value="${params.manager}" placeholder="">
+						<label>비밀번호</label>
+						<span class="focus-border">
+							<i></i>
+						</span>
+					</div>
+
+					<button class="btn-login" type="submit" onclick="ajaxLoginSubmit(); return false;">로그인</button>
+				</form>
+			</div>
+		</div>
+		<div class="close"><a href="#none" onclick="pop.close()"><img src="/images/btn/btn_close.gif" alt="닫기"></a></div>
+	
+		<script type="text/javascript">
+
+      $(window).on('load', function() {
+        $(".layPop input").val("");
+        
+        $(".input-effect input").focusout(function(){
+          if($(this).val() != ""){
+            $(this).addClass("has-content");
+          }else{
+            $(this).removeClass("has-content");
+          }
+        })
+      });
+ 
+		</script>
+	</div>
+	<!-- // 팝업소스 -->
+
+

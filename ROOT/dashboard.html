@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>동원대학교 역량기반 현장중심 교육과정 관리시스템</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,800,900,500">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=1">
+<!-- <link rel="stylesheet" type="text/css" href="/css/common.css?v=2"> -->
+<link rel="stylesheet" type="text/css" href="/css/board.css?v=1">
+
+
+<!-- <link rel="stylesheet" type="text/css" href="/css/basic.css?v=1"> -->
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2">
+<!-- <link rel="stylesheet" type="text/css" href="/custom/dima/css/styleBg.css"> -->
+
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.css">
+<link rel="stylesheet" href="/css/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="/lib/html5shiv.js"></script>
+<!--<script type="text/javascript" src="/lib/IE9.js"></script>-->
+<script type="text/javascript" src="/lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-sliderAccess.js"></script>
+<script type="text/javascript" src="/lib/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="/lib/jquery.play.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/js/jquery.ncs.js"></script>
+<script type="text/javascript" src="/lib/jquery.form.js"></script>
+<script type="text/javascript" src="/lib/placeholders.min.js"></script>
+
+<!-- 	<link rel="stylesheet" href="/css-new/style.css?v=2" /> -->
+<link rel="stylesheet" href="/css-new/responsive.css?v=1">
+<script type="text/javascript" src="/js/jquery.ncs.new.js?v=1"></script>
+<script src="https://kit.fontawesome.com/6026cbbd9c.js" crossorigin="anonymous"></script>
+	<!-- /* <script src="/js/jquery.tmpl.js"></script>  */ -->
+	<!--[if lt IE 9]>
+		<script src="/lib/html5shiv-printshiv.js"></script>
+	<![endif]--> 
+	<!-- <script type="text/javascript">
+		if (window.location.protocol.toLowerCase().indexOf("https") == -1 && (window.location.port == "" || window.location.port == "80")) {
+			window.location.replace(window.location.href.replace(/^.+:\/\//, "https://"));
+		}
+	</script> -->
+</head>
+
+<body>
+
+
+<div id="wrap-new">
+	<!-- Header -->
+		
+  <!-- 관라자, 교직원 -->
+
+    <!-- operPlan_header_auth :    -->
+    <header id="header-new">
+      <div class="header-new">
+        <div class="col-left">
+          <h1><a href="/"><img src="/img/logo_tongwonSy-wh.svg" alt=""></a></h1>
+        </div>
+        <div class="col-right">
+          <div class="login-new">
+						<div class="wrap-admin">
+							<i class="icon admin"></i><span><a href="#">시스템관리자님</a> 환영합니다.</span>
+						</div>
+						<div class="btn-area -type1">
+							<a href="#" class="button system-btn"><span>주요현황</span></a>
+							<div class="tooltip-box t-b1"></div>
+						</div>
+						<div class="btn-area -type2">
+							<a href="#" class="button system-btn"><span>로그아웃</span></a>
+							<div class="tooltip-box t-b2"></div>
+						</div>
+            <!-- <i class="icon admin"></i>
+            <a href="/ncsmanager/index.do">시스템관리자님 </a>환영합니다.
+            <a href="/ncsmanager/dashboard/dashboard.do" class="button Bblue system-btn"><span>주요현황</span></a>
+            <a href="/sso/logout.jsp" class="button line system-btn">
+            <i class="icon log-out"></i><span class="xs-hidden">
+							<span>로그아웃</span>
+						</a> -->
+          </div>
+
+          <!-- Nav -->
+          <nav id="nav-new">
+            <div class="mobile-menu xs-show"><a href="#none"><i class="icon mb-menu"></i></a>
+              <span>주요현황</span>
+            </div>
+            <ul class="nav-new">
+              <li class="">
+                <a href="#">역량 및 학과정보</a>
+              </li>
+              <li>
+                <a href="#">교육과정 개발</a>
+              </li>
+              <li class="">
+                <a href="#">교육품질관리</a>
+              </li>
+              <li class="active">
+                <a href="#">부서 업무추진계획</a>
+              </li>
+							<li>
+                <a href="#">시스템 관리</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- //Nav -->
+        </div>
+      </div>
+    </header>
+  <!-- 외부 인사 -->
+  <!-- 학생 -->
+	<!-- //Header -->
+
+
+	<!-- Container --> 
+	<section class="sub-container" >
+
+		<div class="mobile-lnb xs-show">
+			<select id="lnbOperationSelect" class="" onchange="goLnb(this, '', '');">
+				<option selected="" value="/subInfo/eduTarget/list.do?year=&amp;maj_no=">학과 목표 및 역량</option>
+				<option value="/subInfo/rdmap/list.do?year=&amp;maj_no=">역량로드맵</option>
+			</select>
+		</div>
+
+		<!-- 200260403 대시보드 - 대시보드에선 사이드 메뉴가 삭제되고 전체 화면으로 꽉 차게 사용됩니다. -->
+		<div class="col-contents">
+			<div class="subCon">
+
+				<!-- 컨텐츠 영역 -->
+				<h2>주요현황</h2>
+
+				<div class="subManaCon">
+					<form name="frm" id="frm" method="POST">
+
+						<!-- 주요현황 대분류 -->
+						<div class="lg-category">
+							<select name="sel-year" id="">
+								<option value="">2026</option>
+								<option value="">2025</option>
+								<option value="">2024</option>
+								<option value="">2023</option>
+								<option value="">2022</option>
+								<option value="">2021</option>
+								<option value="">2020</option>
+							</select>
+							<select name="sel-period" id="">
+								<option value="">1학기</option>
+								<option value="">2학기</option>
+							</select>
+							<button type="button">
+								<img src="images/dashboard/icon_search.png" alt="조회">
+								<span>조회</span>
+							</button>
+						</div>
+
+
+						<!-- 역량기반 주요현황 대시보드 -->
+						<div class="tabBox main-status ms1">
+
+							<div class="chart-wrapBox-list">
+								<!-- 차트1 - 교육과정 개발 진행 현황 -->
+								<div class="chart-wrap cw1">
+									<h3>교육과정 개발 진행 현황 <span class="h-label">2026학년도</span></h3>
+									<div class="chart-wrapGroup">
+										<div id="main-chart1" class="dash-chart"></div>
+										<p>작성률<strong>51.43%</strong></p>
+									</div>
+									<ul class="crr-sum-list">
+										<li>
+											<div class="c-s-title">전체 학과</div>
+											<div class="c-s-rate">35</div>
+										</li>
+										<li>
+											<div class="c-s-title">제출 완료</div>
+											<div class="c-s-rate">18</div>
+										</li>
+										<li>
+											<div class="c-s-title">작성 중</div>
+											<div class="c-s-rate">10</div>
+										</li>
+										<li>
+											<div class="c-s-title">미작성</div>
+											<div class="c-s-rate">7</div>
+										</li>
+									</ul>
+								</div>
+								<!-- 차트2 - 교과목CQI 작성 현황 -->
+								<div class="chart-wrap cw2">
+									<h3>교과목CQI 작성 현황 <span class="h-label">2026학년도</span> <span class="h-label">1학기</span></h3>
+									<div class="chart-wrapGroup">
+										<div id="main-chart2" class="dash-chart"></div>
+										<p>작성률<strong>78.4%</strong></p>
+									</div>
+									<ul class="crr-sum-list">
+										<li>
+											<div class="c-s-title">전체 강좌</div>
+											<div class="c-s-rate">1,250</div>
+										</li>
+										<li>
+											<div class="c-s-title">작성완료</div>
+											<div class="c-s-rate">980</div>
+										</li>
+										<li>
+											<div class="c-s-title">작성중</div>
+											<div class="c-s-rate">260</div>
+										</li>
+										<li>
+											<div class="c-s-title">미작성</div>
+											<div class="c-s-rate">10</div>
+										</li>
+									</ul>
+								</div>
+								
+								<!-- 차트3 - 학과 교육품질관리(CQI) 현황 -->
+								<div class="chart-wrap cw3">
+									<h3>학과 교육품질관리(CQI) 현황 <span class="h-label">2026학년도</span></h3>
+									<div class="chart-wrapGroup">
+										<div id="main-chart3" class="dash-chart"></div>
+										<p>작성률<strong>82.86%</strong></p>
+									</div>
+									<ul class="crr-sum-list">
+										<li>
+											<div class="c-s-title">전체 학과</div>
+											<div class="c-s-rate">35</div>
+										</li>
+										<li>
+											<div class="c-s-title">제출 완료</div>
+											<div class="c-s-rate">29</div>
+										</li>
+										<li>
+											<div class="c-s-title">작성중</div>
+											<div class="c-s-rate">2</div>
+										</li>
+										<li>
+											<div class="c-s-title">미작성</div>
+											<div class="c-s-rate">4</div>
+										</li>
+									</ul>
+								</div>
+
+								<!-- 차트4 - 학과 자체평가 참여율 -->
+								<div class="chart-wrap cw4">
+									<h3>학과 자체평가 참여율 <span class="h-label">2026학년도</span></h3>
+									<!-- <div id="main-chart3" class="dash-chart"></div> -->
+									<div class="chart-wrapGroup">
+										<div id="main-chart4" class="dash-chart"></div>
+									</div>
+									<ul class="crr-sum-list">
+										<li>
+											<div class="c-s-title">전체 위원</div>
+											<div class="c-s-rate">80</div>
+										</li>
+										<li>
+											<div class="c-s-title">참여 인원</div>
+											<div class="c-s-rate">65</div>
+										</li>
+										<li>
+											<div class="c-s-title">참여율</div>
+											<div class="c-s-rate">81.25%</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+							<!-- //차트4종 -->
+
+							<div class="mixed-wrapBox-list">
+								<!-- 학과 현황 자료 업로드 현황 -->
+								<div class="dash-mixed-wrap">
+									<h3>
+										학과 현황 자료 업로드 현황 <span class="h-label">2026학년도</span>
+									</h3>
+
+									<ul class="wrap_half-bar">
+										<li>
+											<p class="sub_desc">
+												<span>교원확보 현황</span>
+												<span class="sm-rate">90%</span>
+											</p>
+											<div class="bar">
+												<div class="bar-fill b-bg_orange" style="--percent:90%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span>재적학생 현황</span>
+												<span class="sm-rate">50%</span>
+											</p>
+											<div class="bar">
+												<div class="bar-fill b-bg_ygreen" style="--percent:104%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span>핵심지표</span>
+												<span class="sm-rate">69%</span>
+											</p>
+											<div class="bar">
+												<div class="bar-fill b-bg_blue" style="--percent:100%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span>산업체 현장실습 운영</span>
+												<span class="sm-rate">49%</span>
+											</p>
+											<div class="bar">
+												<div class="bar-fill b-bg_yellow" style="--percent:33.33%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span>교육만족도</span>
+												<span class="sm-rate">80%</span>
+											</p>
+											<div class="bar">
+												<div class="bar-fill b-bg_lblue" style="--percent:60%"></div>
+											</div>
+										</li>
+										<li>
+											<p class="sub_desc">
+												<span>교육환경 구축 현황</span>
+												<span class="sm-rate">70%</span>
+											</p>
+											<div class="bar">
+												<div class="bar-fill b-bg_pblue" style="--percent:0%"></div>
+											</div>
+										</li>
+									</ul>
+
+								</div>
+
+								<!-- 공지사항 -->
+								<div class="dash-mixed-wrap">
+									<h3>
+										공지사항
+										<!-- <a class="dash-more" href="#"></a> -->
+									</h3>
+
+									<ul class="dash-noti">
+										<li>
+											<a href="#">
+												<!-- ' &nbsp;<span class="badge -new">NEW</span>' 이것은 한 세트로 취급해 주세요 (&nbsp; 앞의 띄어쓰기 포함) -->
+												<div>역량기반 교육과정 개발 입력관련 안내역량기반 교육과정 개발 입력관련 안내역량기반 교육과정 개발 입력관련 안내 &nbsp;<span class="badge -new">NEW</span></div>
+												<span>2026.02.04</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div>역량기반 교육과정 개발 입력관련 안내 &nbsp;<span class="badge -new">NEW</span></div>
+												<span>2026.01.26</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div>역량기반 교육과정 개발 입력관련 안내 </div>
+												<span>2026.01.26</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<div>역량기반 교육과정 개발 입력관련 안내 </div>
+												<span>2026.01.26</span>
+											</a>
+										</li>
+									</ul>
+
+								</div>
+
+								<!-- 시스템 설정 정보 -->
+								<div class="dash-mixed-wrap">
+									<h3>
+										시스템 설정 정보
+										<!-- <a class="dash-more" href="#"></a> -->
+									</h3>
+
+									<ul class="period-list">
+										<li>
+											<div class="p-title">시스템 기본 학년도</div>
+											<div class="p-term">2026년</div>
+										</li>
+										<li>
+											<div class="p-title">관리자 계정</div>
+											<div class="p-term">2건</div>
+										</li>
+										<li>
+											<div class="p-title">교직원 계정</div>
+											<div class="p-term">949건</div>
+										</li>
+										<li>
+											<div class="p-title">외부인사 계정</div>
+											<div class="p-term">84건</div>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+
+						</div>
+
+
+					</form>
+				</div>
+
+			</div>
+
+
+			<div class="layPop big" id="listPop_full">
+				<div class="tit">
+					NCS정보 관리
+				</div>
+				<iframe src="" width="100%" height="100%" frameborder="0" data-height="60"></iframe>
+				<div class="close"><a href="#none" onclick="try{closePop();}catch(e){}pop.close(); return false;">닫기</a></div>
+			</div>
+			<div class="popBg" style="display:none;"></div>
+
+		</div>
+
+		<!-- //200260403 대시보드 -->
+
+
+		<div id="FOOTER_AREA" class="bottom-button-wrap">
+			<!-- <a href="dep-plan1.html" class="button blue size-mid min-width">등록</a> -->
+		</div>
+
+	</section>
+	<!-- //Container -->
+</div>
+
+
+<script>
+
+	$(function(){
+
+		$(".system-btn").each(function(idx){
+			const $this = $(this);
+			$this.hover(
+				function(){
+					$this.next().animate({opacity: '1'}, 300);
+				},
+				function(){
+					$this.next().animate({opacity: '0'}, 50);
+				}
+			);
+		});
+
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart1);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart1() {
+
+      // Create the data table.
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Curriculum Development Progress'],
+        ['제출 완료', 18],
+        ['작성 중', 10],
+        ['미작성', 7]
+      ]);
+
+      // Set chart options
+      var options = {
+                      chartArea:{
+                        left:0,
+                        right:0, // !!! works !!!
+                        bottom:20,  // !!! works !!!
+                        top:35,
+                        width:"100%",
+                        height:"100%"
+                      },
+                      'legend': { position: 'top', alignment: 'center', maxLines: 4 },
+                      // 'title':'교육과정 운영 현황',
+                      'pieHole': 0.5,
+                      'colors': ['#fd6384', '#ffcb62', '#39a4e8' ],
+                      'width':260,
+                      'height':260,
+                      'sliceVisibilityThreshold':0
+                    };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('main-chart1'));
+      chart.draw(data, options);
+      window.addEventListener('resize', drawChart1, false);
+
+      // function resizeChart() {
+      // 	chart.draw(data, options);
+      // }
+
+      // if (document.addEventListener) {
+      // 	window.addEventListener('resize', () => {
+      // 			resizeChart();
+      // 		});
+      // }
+      // var chart = new google.visualization.PieChart(document.getElementById('아이디값'));
+      // chart.draw(data, option);
+      // window.addEventListener('resize', 함수명, false);
+
+    }
+
+    google.charts.setOnLoadCallback(drawChart1);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart2() {
+
+      // Create the data table.
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Course CQI Preparation Status'], 
+        ['작성 완료', 980],
+        ['작성 중', 260],
+        ['미작성', 10]
+      ]);
+
+      // Set chart options
+      var options = {
+                      chartArea:{
+                        left:0,
+                        right:0, // !!! works !!!
+                        bottom:20,  // !!! works !!!
+                        top:35,
+                        width:"100%",
+                        height:"100%"
+                      },
+                      'legend': { position: 'top', alignment: 'center', maxLines: 4 },
+                      // 'title':'2025학년도 교육과정 개발 현황',
+                      'pieHole': 0.5,
+                      'colors': ['#fd6384', '#ffcb62', '#39a4e8' ],
+                      'width':260,
+                      'height':260,
+                      'sliceVisibilityThreshold':0
+                    };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('main-chart2'));
+      chart.draw(data, options);
+      window.addEventListener('resize', drawChart2, false);
+
+      // function resizeChart() {
+      // 	chart.draw(data, options);
+      // }
+
+      // if (document.addEventListener) {
+      // 	window.addEventListener('resize', () => {
+      // 			resizeChart();
+      // 		});
+      // }
+
+    }
+    google.charts.setOnLoadCallback(drawChart2);
+
+
+    function drawChart3() {
+
+      // Create the data table.
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Current Status of Department Education Quality Management (CQI)'], 
+        ['제출 완료', 29],
+        ['작성 중', 2],
+        ['미작성', 4]
+      ]);
+
+      // Set chart options
+      var options = {
+                      chartArea:{
+                        left:0,
+                        right:0, // !!! works !!!
+                        bottom:20,  // !!! works !!!
+                        top:35,
+                        width:"100%",
+                        height:"100%"
+                      },
+                      'legend': { position: 'top', alignment: 'center', maxLines: 4 },
+                      // 'title':'2025학년도 학과 교육품질관리 현황',
+                      'pieHole': 0.5,
+                      'colors': ['#fd6384', '#ffcb62', '#39a4e8' ],
+                      'width':260,
+                      'height':260,
+                      'sliceVisibilityThreshold':0
+                    };
+
+      // Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.PieChart(document.getElementById('main-chart3'));
+      chart.draw(data, options);
+      window.addEventListener('resize', drawChart3, false);
+
+      // function resizeChart() {
+      // 	chart.draw(data, options);
+      // }
+
+      // if (document.addEventListener) {
+      // 	window.addEventListener('resize', () => {
+      // 			resizeChart();
+      // 		});
+      // }
+    }
+    google.charts.setOnLoadCallback(drawChart3);
+
+
+    // 바 차트 4번째 차트
+    // google.charts.load("current", {packages:['corechart']});
+    
+    function drawChart4() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "비율", { role: "style" } ],
+        ["참여", 19.30, "color: #fd6384"],
+        ["미참여", 21.45, "color: #39a4e8"]
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        //title: "Density of Precious Metals, in g/cm^3",
+        width: 260,
+        height: 260,
+        bar: {groupWidth: "80%"},
+        legend: { position: "none" },
+        chartArea: {
+          left: '10%',  // 라벨을 위해 약간의 여유를 둘 수 있음
+          top: '10%',
+          width: '85%', // 100%로 하면 라벨이 잘릴 수 있으므로 85~90% 추천
+          height: '84%'
+        },
+      };
+      var chart = new google.visualization.ColumnChart(document.getElementById("main-chart4"));
+      chart.draw(view, options);
+  }
+	google.charts.setOnLoadCallback(drawChart4);
+
+		
+	});
+
+</script>
+
+
+
+
+
+
+		
+
+
+
+
+</body>
+
+  
+
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동원대학교 역량기반 현장중심 교육과정 관리시스템 - 로그인</title>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <!-- <link rel="stylesheet" href="/css/common.css"> -->
+  <link rel="stylesheet" href="/css/login.css">
+  
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <h1><img src="img/logo_tongwonSy.png" alt="동원대학교 역량기반 현장중심 교육과정 관리시스템"></h1>
+      <a class="btn-goCampus" href="http://tw.ac.kr/"><i></i><span>대학사이트</span></a>
+    </header>
+    <div class="inner">
+      <section class="swiper-section">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/ban_log1.jpg" alt="동원대학교 역량기반 현장주심 교육과정 관리시스템에 오신 것을 환영합니다.">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ban_log2.jpg" alt="동원대학교 역량기반 현장주심 교육과정 관리시스템에 오신 것을 환영합니다.">
+          </div>
+        </div>
+        <!-- 페이지 네비게이션 -->
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="login-section">
+        <div class="login-panel panel">
+          <span class="btn-panel qu">
+            <img src="img/icon_panel1.png" alt="로그인 도움말">
+          </span>
+          <h2>LOGIN</h2>
+          <p>원하는 서비스를 이용하시려면 로그인이 필요합니다.</p>
+          
+          <form action="" class="pop-login"> <!-- 20250923 추가됨 (form 클래스부터 추가 시작) -->
+            
+            <button class="btn-login outLink" type="submit">교직원 로그인</button>
+            <button class="btn-login op" type="button" onclick="">외부인사 로그인</button>
+
+            <div class="pop-login-wrap"> <!-- 기존 wrap-input을 전체적으로 감싸는 div.pop-login-wrap -->
+              <div class="wrap-input input-effect">
+                <input class="effect-21" type="text" placeholder="">
+                <label>외부인사 아이디</label>
+                <span class="focus-border">
+                  <i></i>
+                </span>
+              </div>
+              <div class="wrap-input input-effect">
+                <input class="effect-21" type="password" placeholder="">
+                <label>비밀번호</label>
+                <span class="focus-border">
+                  <i></i>
+                </span>
+              </div>
+              <button class="btn-login" type="submit">로그인</button>
+              <div class="chkline">
+                <a href="">
+                  <img src="img/icon_return.png" alt="">
+                  <span>로그인 선택 돌아가기</span>
+                </a>
+              </div>
+            </div>
+            
+          </form> <!-- 20250923 추가 끝 -->
+        </div>
+        <div class="notice-panel panel">
+          <a class="btn-panel more" href="">
+            <img src="img/icon_panel2.png" alt="공지사항 더 보기">
+          </a>
+          <h2>공지사항</h2>
+          <ul>
+            <li><a href="#">2025-2학기 전과, 재입학 및 복수전공 신청 안내</a></li>
+            <li><a href="#">[보건실] 감염병(홍역) 예방과 확산방지 안내</a></li>
+            <li><a href="#">[보건실] 폭염대비 행동수칙 안내</a></li>
+            <li><a href="#">[도서관] 2025학년도 1학기 기말고사 기간 도서관</a></li>
+            <li><a href="#">2025학년도 1학기 기말고사 공고</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-logo"><img src="img/logo_tongwonSy-gr.svg" alt="동원대학교 역량기반 현장중심 교육과정 관리시스템"></div>
+      <div class="footer-info">
+        <address><span>(12813) 경기 광주시 곤지암읍<br>경충대로 26 (신촌리, 동원대학) 동원대학교</span><span>일반대표전화 031-799-8888</span><span>전국대표전화 1544-4114</span><span>FAX 031-763-8549</span>
+        </address>
+        <!-- 
+        <address>(12813) 경기 광주시 곤지암읍 경충대로 26 (신촌리, 동원대학) 동원대학교<span>&nbsp;&nbsp;｜&nbsp;&nbsp;</span>일반대표전화 031-799-8888<span>&nbsp;&nbsp;｜&nbsp;&nbsp;</span>전국대표전화 1544-4114<span>&nbsp;&nbsp;｜&nbsp;&nbsp;</span>FAX 031-763-8549</address>
+        
+        -->
+        <p class="copyright">COPYRIGHT@ TONGWON UNIVERSITY. All Rights Reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script type="text/javascript">
+
+      //$(window).load(function(){
+      $(window).on('load', function() {
+        $(".wrap-input input").val("");
+        
+        $(".input-effect input").focusout(function(){
+          if($(this).val() != ""){
+            $(this).addClass("has-content");
+          }else{
+            $(this).removeClass("has-content");
+          }
+        })
+      });
+
+      const loginSwiper = new Swiper('.swiper-section', {
+        //direction: 'horizontal',
+        loop:true,
+        autoplay: {
+          delay: 5000
+        },
+        speed: 500,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets'
+        }
+
+      });
+
+      // 20250923 추가됨
+      const btnLoginOpen = $(".btn-login.op");
+      btnLoginOpen.next().hide();
+      btnLoginOpen.click(function() {
+        $(this).next().fadeIn();
+        return false;
+      });
+      $(".chkline>a").click(function() {
+        $(this).parents('.pop-login-wrap').fadeOut();
+        return false;
+      });
+
+    // $(document).ready(function() {  
+      
+    // });
+
+    
+
+  </script>
+</body>
+</html>

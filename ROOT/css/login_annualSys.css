@@ -1,0 +1,699 @@
+@charset "utf-8";
+@import url("reset.css");
+
+html {
+  width:100%;
+  height:100%;
+}
+body {
+  width:100%;
+  height:100%;
+  background:linear-gradient(-45deg, #f5e9f0 11%, #f5f5f5 40%, #efefef 63%, #f5e9f0 100%);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.wrap {
+  margin:0 auto;
+  max-width:920px;
+  display:flex;
+  flex-direction:column;
+}
+.wrap header {
+  width:100%;
+  /* max-width:920px; */
+  padding:29px 0 46px;
+  padding:112px 0 44px;
+  padding:72px 0 44px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.wrap header h1 {
+  max-width:204px;
+  width:100%;
+  max-height:46px;
+  height:100%;
+}
+.wrap header h1>img {
+  width:100%;
+  height:100%;
+}
+.inner {
+  /* height:700px; */
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.login-section {
+  max-width:920px;
+  width:100%;
+  /* height:550px; */
+  height:auto;
+  display:grid;
+  gap:0px;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+}
+.panel {
+  padding:38px 47px 0;
+  position:relative;
+}
+.notice-panel {
+  /* padding-bottom:20px; */
+  padding:62px 33px 43px 33px;
+  /* max-height:490px; */
+  max-height:385px;
+  height:100%;
+  background-color:#5764eb;
+  color:#fff;
+  text-align:left;
+}
+.login-panel {
+  /* padding-bottom:38px; */
+  padding:113px 55px 124px 55px;
+  /* max-height:550px; */
+  max-height:313px;
+  height:100%;
+  background-color:#fff;
+  box-shadow:2px 2px 40px 0px rgba(4, 0, 0, .05);
+}
+
+.wrap_img {
+  max-width:361px;
+  width:100%;
+  /* width:361px; */
+  height:auto;
+  margin-left:11px;
+}
+.wrap_img>img {
+  width:100%;
+}
+.panel>h2 {
+  text-align:center;
+  font-weight:bold;
+  color:#5764df;
+  line-height:1.2;
+}
+.notice-panel>h2 {
+  text-align:left;
+  width:100%;
+  max-width:326px;
+  height:auto;
+  font-size:26px;
+  padding-bottom:10px;
+  padding-bottom:20px;
+}
+.notice-panel>h2>img {
+  width:100%;
+}
+.notice-panel>p {
+  font-size:15px;
+  line-height:1.6;
+  padding-bottom:22px;
+}
+
+.login-panel>h2 {
+  text-align:center;
+  font-weight:bold;
+  color:#5764df;
+  line-height:1;
+  font-size:37px;
+  padding-bottom:28px;
+}
+.login-panel>p {
+  font-size:16px;
+  line-height:1.2;
+  text-align:center;
+  padding-bottom:18px;
+}
+.login-msg {
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:30px;
+  height:60px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.login-msg>p {
+  font-size:20px;
+  line-height:1.4;
+}
+.login-msg>p>a {
+  color:#5764eb;
+  font-weight:bold;
+}
+
+.wrap-input {
+  margin-top:16px;
+}
+.btn-login {
+  margin-top:18px;
+}
+.btn-login.outLink {
+  margin-top:40px;
+}
+.chkline {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:11px;
+  /* text-align:right; */
+}
+.chkline span {
+  font-size:13px;
+  /* text-align:right; */
+  vertical-align:top;
+}
+.chkline>a {
+  display:block;
+  text-align:right;
+  text-decoration:underline;
+  font-size:13px;
+}
+.chkline img {
+  width:20px;
+  height:20px;
+  vertical-align:top;
+}
+.chk {
+  line-height:1.2;
+}
+.chk>input[type="checkbox"] {
+  display:none;
+}
+.chk>label {
+  cursor:pointer;
+  font-size:12px;
+  font-weight:400;
+  vertical-align:top;
+}
+.chk>label>span {
+  padding-left:6px;
+  vertical-align:text-top;
+}
+.chk>input[type="checkbox"] + label::before {
+  content:'';
+  display:inline-block;
+  width:15px;
+  height:15px;
+  background-color:#fff;
+  border:1px solid #ccc;
+  vertical-align:text-bottom;
+  margin-top:1px;
+}
+.chk>input[type="checkbox"]:checked + label::before {
+  background-image:url(../img/chkbox.jpg);
+  border:1px solid #333;
+}
+
+
+.btn-section {
+  max-width:920px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  margin-top:30px;
+  /* padding-top:30px; */
+  /* gap:37px; */
+}
+.btn-section>a{
+  display:inline-block;
+  width:100%;
+  max-width:440px;
+  height:85px;
+  color:#727cf5;
+  font-weight:600;
+  background-color:#fff;
+  box-shadow:2px 2px 40px 0px rgba(4, 0, 0, .05);
+  text-align:center;
+  line-height:85px;
+}
+.btn {
+  box-sizing:border-box;
+  border:1px solid #fff;
+  transition:.3s;
+}
+.btn>img {
+  vertical-align:middle;
+  margin-top:-6px;
+  margin-right:15px;
+}
+.btn-panel>img {
+  width:22px;
+  height:23px;
+  padding-top:5px;
+}
+.btn-panel.qu {
+ cursor:pointer;
+}
+.btn-panel.qu::after {
+  content:'▼';
+  display:block;
+  position:absolute;
+  right:5px;
+  top:-24px;
+  color:#333;
+  font-size:26px;
+  line-height:1.2;
+  display:none;
+}
+.btn-panel.qu::before {
+  content:'포탈시스템 로그인정보로 로그인 가능합니다.';
+  display:block;
+  position:absolute;
+  right:-25px;
+  top:-50px;
+  min-width:255px;
+  max-height:42px;
+  padding:14px 15px;
+  border-radius:12px;
+  background-color:#333;
+  color:#fff;
+  font-size:13px;
+  line-height:1.2;
+  z-index:1;
+  display:none;
+}
+.btn-panel.qu:active::before,
+.btn-panel.qu:active::after,
+.btn-panel.qu:focus::before,
+.btn-panel.qu:focus::after,
+.btn-panel.qu:hover::before,
+.btn-panel.qu:hover::after {
+  display:block;
+}
+.btn-login {
+  background:linear-gradient(61deg,rgba(164, 115, 246, 1) 0%, rgba(86, 101, 239, 1) 50%, rgba(87, 100, 223, 1) 100%);
+  color:#fff;
+  width:100%;
+  padding:12px 0;
+}
+.btn-logout {
+  background:linear-gradient(61deg,rgb(243 240 248) 0%, rgb(208 210 224) 50%, rgb(220 221 230)  100%);
+  color:#fff;
+  width:100%;
+  padding:12px 0;
+}
+.panel.out>button:last-child {
+  margin-top:15px;
+}
+
+
+
+
+/*= input focus effects css
+=========================== */
+:focus{outline: none;}
+
+.wrap-input {
+  width:100%; 
+  /* margin:40px 3%;  */
+  position: relative;
+}
+
+input[type="password"],
+input[type="text"] {
+  /* font: 14px/1.2 "Lato", Arial, sans-serif; */
+  font-size:14px;
+  line-height:1.2;
+  height:40px;
+  color:#333; width: 100%; box-sizing: border-box;
+  letter-spacing:normal;
+}
+
+.effect-21{
+  border:1px solid #ccc;
+  padding: 7px 14px; transition: 0.4s; background:#fff;
+}
+.effect-21 ~ .focus-border:before,
+.effect-21 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 2px; 
+  background-color:#5764df;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.effect-21 ~ .focus-border:after{
+  top:auto; 
+  bottom:0; 
+  right: auto; 
+  left: 0; 
+  transition-delay: 0.6s;
+}
+.effect-21 ~ .focus-border i:before,
+.effect-21 ~ .focus-border i:after{
+  content: ""; 
+  position: absolute; 
+  top: 0; left: 0; width: 2px; height: 0; 
+  background-color: #5764df; 
+  transition: 0.2s;
+}
+.effect-21 ~ .focus-border i:after{
+  left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;
+}
+.effect-21:focus ~ .focus-border:before,
+.effect-21:focus ~ .focus-border:after,
+.has-content.effect-21 ~ .focus-border:before,
+.has-content.effect-21 ~ .focus-border:after{
+  width: 100%; transition: 0.2s; transition-delay: 0.6s;
+  
+}
+.effect-21:focus ~ .focus-border:after,
+.has-content.effect-21 ~ .focus-border:after{transition-delay: 0.2s;}
+.effect-21:focus ~ .focus-border i:before,
+.effect-21:focus ~ .focus-border i:after,
+.has-content.effect-21 ~ .focus-border i:before,
+.has-content.effect-21 ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+.effect-21:focus ~ .focus-border i:after,
+.has-content.effect-21 ~ .focus-border i:after{transition-delay: 0.4s;}
+.effect-21 ~ label{
+  position: absolute; 
+  left: 14px;
+  font-size:13px; 
+  width:auto;
+  top:10px; 
+  color:#777; 
+  transition: all 0.3s; 
+  /* z-index: -1;  */
+  letter-spacing:-0.5px;
+  opacity:1;
+}
+.effect-21:focus ~ label, .has-content.effect-21 ~ label{
+  top: -10px; left: 0; 
+  font-size: 0px; 
+  color: #5764df; 
+  transition: all 0.3s;
+  opacity:0;
+ 
+}
+
+/*= input focus effects css End
+=============================== */
+
+
+/* 하단 배너형 버튼 효과 */
+.raise:hover,
+.raise:focus {
+  box-shadow:0 0.7em 0.7em -0.4em rgba(4, 0, 0, .1);
+  transform:translateY(-0.25em);
+  /* 2px 2px 40px 0px rgba(4, 0, 0, .05); */
+}
+
+
+
+/* 푸터 */
+footer {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  padding:35px 0;
+  max-width:920px;
+  margin:0 auto;
+}
+.footer-logo {
+  /* width:207px;
+  height:45px; */
+  max-width:295px;
+  height:auto;
+  width:100%;
+  display:flex;
+  /* width:12.938rem;
+  height:2.813rem; */
+}
+.footer-info {
+  padding:0 0px 0 10px;
+}
+.footer-info address {
+  font-size:13px;
+  color:#a5a5a5;
+  letter-spacing:-.5px;
+  text-align:right;
+  line-height:1.5;
+}
+.footer-info address>span {
+  line-height:1.4;
+  vertical-align:top;
+}
+/* address br {
+  display:none;
+} */
+address>span:not(:nth-child(1))::before {
+  content:'｜';
+  display:inline-block;
+  padding:0;
+  margin:1px 7px 0;
+  clear:both;
+  font-size:10px;
+  line-height:1.5;
+  vertical-align:top;
+}
+.copyright {
+  font-size:11px;
+  color:#b4b4b4;
+  font-weight:600;
+  text-align:right;
+}
+
+
+@media (max-width: 1280px) {
+  
+}
+
+
+@media (max-width: 1200px) {
+  .wrap header {
+    padding:42px 0 34px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .wrap header {
+    padding:42px 0 34px;
+  }
+
+}
+
+
+@media (max-width: 930px) {
+
+  .wrap {
+    padding:0 20px;
+  }
+  .btn-section {
+    gap:20px;
+  }
+
+}
+
+
+@media (max-width: 859px) {
+
+  .notice-panel {
+    max-height:365px;
+    padding:42px 33px 33px 33px;
+  }
+  .login-panel {
+    /* max-height:293px; */
+    padding:93px 55px 104px 55px;
+  }
+  .notice-panel>p {
+    font-size:14px;
+  }
+  .login-panel>h2 {
+    font-size:35px;
+    padding-bottom:20px;
+  }
+  .login-panel>p {
+    font-size:14px;
+    padding-bottom:12px;
+  }
+  .wrap-input:first-child {
+    margin-top:10px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .wrap header {
+    padding:32px 0;
+  }
+  .wrap header h1 {
+    max-width:184px;
+  }
+  .login-section {
+    display:flex;
+    flex-direction:column;
+    justify-content:normal;
+    width:100%;
+    /* gap:0; */
+    height:auto;
+  }
+  .notice-panel {
+    width:calc(100% - 66px);
+    
+    padding-top:34px;
+    padding-bottom:26px;
+  }
+  .login-panel {
+    width:70%;
+  }
+  .notice-panel>h2 {
+    max-width:286px;
+    padding-bottom:10px;
+  }
+  .notice-panel>p {
+    padding-bottom:0;
+  }
+  .wrap_img {
+    float:right;
+  }
+  .footer-info {
+    padding:0 20px;
+  }
+  
+}
+
+
+@media (max-width: 680px) {
+
+  .btn-section>a {
+    font-size:14px;
+    height:75px;
+    line-height:75px;
+  }
+  .btn>img {
+    width:32px;
+    margin-right:6px;
+  }
+  footer {
+    flex-direction:column;
+  }
+  .footer-logo {
+    max-width:265px;
+  }
+  .footer-info {
+    padding:0;
+    text-align:center;
+    margin-top:15px;
+  }
+  .copyright,
+  .footer-info address {
+    text-align:center;
+  }
+  address br {
+    display:block;
+  }
+  address>span:not(:nth-child(1))::before {
+    content:'';
+    display:block;
+  }
+
+}
+
+
+@media (max-width: 570px) {
+  
+  .notice-panel>p {
+    padding-bottom:12px;
+    font-size:14px;
+  }
+  .login-panel {
+    padding:63px 55px 74px 55px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  
+  .wrap header {
+    padding:30px 0 25px;
+  }
+  .wrap header>h1 {
+    width:160px;
+  }
+  .login-panel>h2 {
+    font-size:32px;
+    padding-bottom:15px;
+    line-height:.8;
+  }
+  .login-panel>p {
+    padding-bottom:8px;
+  }
+  .login-panel {
+    width:calc(100% - 66px);
+    padding:50px 33px 60px;
+  }
+  .btn-section {
+    flex-direction:column;
+  }
+  .chkline img {
+    width:18px;
+    height:18px;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .panel {
+    padding:34px 33px;
+  }
+  .panel>p {
+    font-size:12px;
+  }
+  .notice-panel li {
+    font-size:12px;
+  }
+  .btn-login,
+  .wrap-input:nth-child(2) {
+    margin-top:13px;
+  }
+  .footer-info address {
+    font-size:12px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  
+  .wrap header {
+    padding:20px 0 20px;
+  }
+  .wrap header>h1 {
+    width:140px;
+  }
+  .notice-panel,
+  .login-panel  {
+    width:calc(100% - 48px);
+    padding:34px 24px;
+  }
+  .login-panel>h2 {
+    font-size:28px;
+  }
+  .chkline span,
+  .chkline>a  {
+    font-size:12px;
+  }
+  .chk>label>span {
+    line-height:15px;
+  }
+  .chkline {
+    line-height:12px;
+  }
+
+}
+

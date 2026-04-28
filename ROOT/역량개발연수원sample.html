@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+  <!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="ko-KR">
+    <![endif]--><!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="ko-KR">
+    <![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+  <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>샘플</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+
+
+
+</head>
+
+<body>
+
+<div id="wrap-new">
+	
+	<!-- 체크박스 샘플 작업 -->
+
+
+	<style>
+		/* 20250829 연수운영관리 셀렉트박스 ->> 체크박스 변경 속성 시작 */
+		.select_box.single {
+			float:inherit;
+			padding-bottom:3px;
+		}
+		.chk_list {
+			display:flex;
+			flex-direction:row;
+			padding:3px 0;
+		}
+		.chk_list>ul {
+			display:flex;
+			flex-direction:row;
+			flex-wrap:wrap;
+		}
+		.chk_list>p {
+			font-weight:500;
+			padding-right:10px;
+			padding:3px 0;
+		}
+		.chk_list>ul>li {
+			margin-left:20px;
+			padding:3px 0;
+		}
+		.chk_list>ul>li input {
+			width:18px;
+			height:18px;
+			vertical-align:sub;
+		}
+		.chk_list>ul>li span {
+			vertical-align:top;
+		}
+		.sub_sch_wrap>.chk_list:nth-child(5) {
+			padding-bottom:9px;
+		}
+		/* 20250829 연수운영관리 셀렉트박스 ->> 체크박스 변경 속성 끝 */
+
+		
+	</style>
+
+
+	<div class="select_box w130p single">
+		<select name="yr" onchange="goSearch();">
+			<option value="">년도</option>
+			<option value="2026">2026년도</option>
+			<option value="2025">2025년도</option>
+			<option value="2024">2024년도</option>
+			<option value="2023">2023년도</option>
+			<option value="2022">2022년도</option>
+			<option value="2021">2021년도</option>
+			<option value="2020">2020년도</option>
+			<option value="2019">2019년도</option>
+			<option value="2018">2018년도</option>
+			<option value="2017">2017년도</option>
+			<option value="2016">2016년도</option>
+		</select>
+	</div>
+
+	<div class="chk_list">
+		<p>연수방식</p>
+		<ul>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_face" value="C">
+					<span>대면집합</span>
+				</label>
+			</li>	
+			<li>
+				<label>
+					<input type="checkbox" name="trn_face" value="U">
+					<span>온라인원격</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_face" value="HB">
+					<span>하이브리드</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_face" value="HF">
+					<span>하이플렉스</span>
+				</label>
+			</li>
+		</ul>
+	</div>
+
+
+
+	<div class="chk_list">
+		<p>연수분야</p>
+		<ul>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="MTD">
+					<span>교수학습법</span>
+				</label>
+			</li>	
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="GB2">
+					<span>온라인 해외연수</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="GB3">
+					<span>해외 전문가 초빙 연수</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="CA">
+					<span>역량기반 교육과정</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="EPM">
+					<span>교육성과관리</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="IG">
+					<span>인포그래픽 / 시각화</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="AI2">
+					<span>산학협력</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="MUP">
+					<span>전공역량 강화</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="JUP">
+					<span>직무역량 강화</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="CAR">
+					<span>진로 / 취업상담</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_field" value="ETC">
+					<span>기타</span>
+				</label>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="chk_list">
+		<p>연수대상</p>
+		<ul>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_target" value="P">
+					<span>교원</span>
+				</label>
+			</li>	
+			<li>
+				<label>
+					<input type="checkbox" name="trn_target" value="E">
+					<span>직원</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_target" value="S">
+					<span>학생</span>
+				</label>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="chk_list">
+		<p>진행상태</p>
+		<ul>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_prog_fake" value="P">
+					<span>예정</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_prog_fake" value="A">
+					<span>신청중</span>
+				</label>
+			</li>	
+			<li>
+				<label>
+					<input type="checkbox" name="trn_prog_fake" value="C">
+					<span>신청마감</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_prog_fake" value="ING">
+					<span>진행중</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_prog_fake" value="END">
+					<span>종료</span>
+				</label>
+			</li>
+			<li>
+				<label>
+					<input type="checkbox" name="trn_prog_fake" value="D">
+					<span>취소</span>
+				</label>
+			</li>
+		</ul>
+	</div>
+
+
+
+                            
+
+
+
+
+
+</body>
+</html>
